@@ -155,6 +155,15 @@ designTrackingActivityRouter().applyRoutes(server, "v1/manufacture/design-tracki
 let designTrackingReasonRouter = require('./src/routers/v1/master/design-tracking-reason-router');
 designTrackingReasonRouter().applyRoutes(server, "v1/master/design-tracking-reasons");
 
+var budgetRouter = require('./src/routers/v1/master/budget-router');
+budgetRouter().applyRoutes(server, 'v1/master/budgets');
+
+var productRouter = require("./src/routers/v1/master/product-router");
+productRouter().applyRoutes(server, 'v1/master/products');
+
+var purchasingCategoryRouter = require('./src/routers/v1/master/purchasing-category-router');
+purchasingCategoryRouter().applyRoutes(server, 'v1/master/categories');
+
 var port = process.env.VCAP_APP_PORT || process.env.PORT || 3000;
 
 var host = process.env.VCAP_APP_HOST || process.env.IP || "0.0.0.0";
