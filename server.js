@@ -90,13 +90,13 @@ var moduleRouter = require('./src/routers/v1/master/module-router');
 moduleRouter.applyRoutes(server, "v1/master/modules");
 
 var storageRouter = require('./src/routers/v1/master/storage-router');
-storageRouter.applyRoutes(server, "v1/master/storages");
+storageRouter().applyRoutes(server, "v1/master/storages");
 
 var storeRouter = require('./src/routers/v1/master/store-router');
 storeRouter.applyRoutes(server, "v1/master/stores");
 
 var supplierRouter = require('./src/routers/v1/master/supplier-router');
-supplierRouter.applyRoutes(server, "v1/master/suppliers");
+supplierRouter().applyRoutes(server, "v1/master/suppliers");
 
 var expeditionServiceRouter = require('./src/routers/v1/master/expedition-service-router');
 expeditionServiceRouter.applyRoutes(server, "v1/master/expedition-service-routers");
@@ -158,11 +158,32 @@ designTrackingReasonRouter().applyRoutes(server, "v1/master/design-tracking-reas
 var budgetRouter = require('./src/routers/v1/master/budget-router');
 budgetRouter().applyRoutes(server, 'v1/master/budgets');
 
+var purchasingCategoryRouter = require('./src/routers/v1/master/purchasing-category-router');
+purchasingCategoryRouter().applyRoutes(server, 'v1/master/categories');
+
+var uomRouter = require('./src/routers/v1/master/uom-router');
+uomRouter().applyRoutes(server, 'v1/master/uoms');
+
+var vatRouter = require('./src/routers/v1/master/vat-router');
+vatRouter().applyRoutes(server, 'v1/master/vats');
+
+var productByIdRouter = require('./src/routers/v1/master/product-by-id-router');
+productByIdRouter().applyRoutes(server, 'v1/master/products/byId');
+
 var productRouter = require("./src/routers/v1/master/product-router");
 productRouter().applyRoutes(server, 'v1/master/products');
 
-var purchasingCategoryRouter = require('./src/routers/v1/master/purchasing-category-router');
-purchasingCategoryRouter().applyRoutes(server, 'v1/master/categories');
+var currenciesRouter = require("./src/routers/v1/master/currency-router");
+currenciesRouter().applyRoutes(server, 'v1/master/currencies');
+
+var uploadProductRouter = require("./src/routers/v1/master/upload-product-router");
+uploadProductRouter().applyRoutes(server, 'v1/master/upload-products')
+
+var uploadSupplierRouter = require('./src/routers/v1/master/upload-supplier-router');
+uploadSupplierRouter().applyRoutes(server, "v1/master/upload-suppliers");
+
+var divisionRouter = require('./src/routers/v1/master/division-router');
+divisionRouter().applyRoutes(server, 'v1/core/master/divisions');
 
 var port = process.env.VCAP_APP_PORT || process.env.PORT || 3000;
 
