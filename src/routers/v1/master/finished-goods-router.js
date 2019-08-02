@@ -151,7 +151,9 @@ router.get("/image/:id", (request, response, next, res) => {
           fileName = doc.imagePath.split("/")[
             doc.imagePath.split("/").length - 1
           ];
-        AzureStorageHelper.download("core", "product", fileName, response);
+    
+    AzureStorageHelper.download("bateeq-product-image", null, fileName, response);
+       
       })
       .catch(e => {
         var error = resultFormatter.fail(apiVersion, 400, e);
