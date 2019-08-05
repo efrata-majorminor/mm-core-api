@@ -97,7 +97,7 @@ router.post("/image/", (request, response, next) => {
 
     var uploadFileProcess = [];
     uploadFileProcess.push(
-      AzureStorageHelper.upload("core", "product", request.files.imageUpload)
+      AzureStorageHelper.upload("bateeq-product-image", null, request.files.imageUpload)
     );
     Promise.all(uploadFileProcess)
       .then(results => {
