@@ -1,6 +1,6 @@
 var Router = require('restify-router').Router;
 var router = new Router();
-var ExpeditionServiceManager = require('bateeq-module').master.ExpeditionServiceManager;
+var ExpeditionServiceManager = require('mm-module').master.ExpeditionServiceManager;
 var db = require('../../../db');
 var resultFormatter = require("../../../result-formatter");
 

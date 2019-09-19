@@ -1,6 +1,6 @@
 var Router = require("restify-router").Router;
 var router = new Router();
-var FinishedGoodsManager = require("bateeq-module").master.FinishedGoodsManager;
+var FinishedGoodsManager = require("mm-module").master.FinishedGoodsManager;
 var db = require("../../../db");
 var resultFormatter = require("../../../result-formatter");
 const AzureStorageHelper = require("../../../azure-storage-helper");
@@ -152,7 +152,7 @@ router.get("/image/:id", (request, response, next, res) => {
             doc.imagePath.split("/").length - 1
           ];
     
-    AzureStorageHelper.download("bateeq-product-image", null, fileName, response);
+    AzureStorageHelper.download("mm-product-image", null, fileName, response);
        
       })
       .catch(e => {

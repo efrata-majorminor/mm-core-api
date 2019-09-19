@@ -1,4 +1,4 @@
-const Manager = require("bateeq-module").manufacture
+const Manager = require("mm-module").manufacture
   .DesignTrackingActivityManager;
 const JwtRouterFactory = require("../jwt-router-factory");
 const resultFormatter = require("../../../result-formatter");

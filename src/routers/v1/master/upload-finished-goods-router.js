@@ -1,10 +1,10 @@
 var Router = require("restify-router").Router;
 var router = new Router();
-var map = require("bateeq-module").merchandiser.map;
+var map = require("mm-module").merchandiser.map;
 var db = require("../../../db");
 var resultFormatter = require("../../../result-formatter");
 var passport = require("../../../passports/jwt-passport");
-var FinishedGoodsManager = require("bateeq-module").master.FinishedGoodsManager;
+var FinishedGoodsManager = require("mm-module").master.FinishedGoodsManager;
 var fs = require("fs");
 var csv = require("fast-csv");
 const AzureStorageHelper = require("../../../azure-storage-helper");
@@ -97,7 +97,7 @@ router.post("/image/", (request, response, next) => {
 
     var uploadFileProcess = [];
     uploadFileProcess.push(
-      AzureStorageHelper.upload("bateeq-product-image", null, request.files.imageUpload)
+      AzureStorageHelper.upload("mm-product-image", null, request.files.imageUpload)
     );
     Promise.all(uploadFileProcess)
       .then(results => {

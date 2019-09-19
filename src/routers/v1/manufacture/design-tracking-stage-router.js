@@ -1,4 +1,4 @@
-const Manager = require('bateeq-module').manufacture.DesignTrackingStageManager;
+const Manager = require('mm-module').manufacture.DesignTrackingStageManager;
 const JwtRouterFactory = require('../jwt-router-factory');
 const apiVersion = '1.0.0';
 

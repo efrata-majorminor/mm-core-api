@@ -1,4 +1,4 @@
-var Manager = require("bateeq-module").master.CurrencyManager;
+var Manager = require("mm-module").master.CurrencyManager;
 var JwtRouterFactory = require("../jwt-router-factory");
 const apiVersion = '1.0.0';
 
