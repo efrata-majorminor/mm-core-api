@@ -1,24 +1,24 @@
 {
-  "name": "bateeq-core-api",
+  "name": "mm-core-api",
   "version": "1.0.0",
-  "description": "Bateeq RESTful core api",
+  "description": "Major Minor RESTful core api",
   "main": "server.js",
   "scripts": {
     "test": "mocha test/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danliris/bateeq-core-api.git"
+    "url": "git+https://github.com/efrata-majorminor/mm-core-api.git"
   },
   "author": "Tris Setiawan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/danliris/bateeq-core-api/issues"
+    "url": "https://github.com/efrata-majorminor/mm-core-api/issues"
   },
-  "homepage": "https://github.com/danliris/bateeq-core-api#readme",
+  "homepage": "https://github.com/efrata-majorminor/mm-core-api#readme",
   "dependencies": {
     "azure-storage": "^2.10.0",
-    "bateeq-module": "git+https://github.com/danliris/bateeq-module.git#dev",
+    "mm-module": "git+https://github.com/efrata-majorminor/mm-module.git#dev",
     "fast-csv": "^2.3.0",
     "js-toolkit": "git+https://github.com/pinkgorilla/js-toolkit.git",
     "json2xls": "^0.1.2",

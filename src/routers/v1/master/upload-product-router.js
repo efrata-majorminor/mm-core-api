@@ -4,7 +4,7 @@ var resultFormatter = require("../../../result-formatter");
 var passport = require("../../../passports/jwt-passport");
 var fs = require('fs');
 var csv = require('fast-csv');
-var ProductManager = require('bateeq-module').master.ProductManager;
+var ProductManager = require('mm-module').master.ProductManager;
 const apiVersion = '1.0.0';
 
 function getRouter() {

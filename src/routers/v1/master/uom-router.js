@@ -1,4 +1,4 @@
-var Manager = require("bateeq-module").master.UomManager;
+var Manager = require("mm-module").master.UomManager;
 var JwtRouterFactory = require("../jwt-router-factory");
 const apiVersion = '1.0.0';
 

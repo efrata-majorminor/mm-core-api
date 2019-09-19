@@ -1,6 +1,6 @@
 var Router = require('restify-router').Router;
 var router = new Router();
-var DimBranch = require('bateeq-module').etl.dimBranch;
+var DimBranch = require('mm-module').etl.dimBranch;
 var db = require('../../../db');
 var SqlHelper = require('../../../sql-helper')
 var resultFormatter = require("../../../result-formatter");

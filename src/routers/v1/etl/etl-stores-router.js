@@ -1,6 +1,6 @@
 var Router = require('restify-router').Router;
 var router = new Router();
-var storesMigration = require('bateeq-module').etl.storesMigration;
+var storesMigration = require('mm-module').etl.storesMigration;
 var db = require('../../../db');
 var resultFormatter = require("../../../result-formatter");
 
