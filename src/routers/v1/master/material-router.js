@@ -1,6 +1,6 @@
 var Router = require('restify-router').Router;
 var router = new Router();
-var MaterialManager = require('bateeq-module').master.MaterialManager;
+var MaterialManager = require('mm-module').master.MaterialManager;
 var db = require('../../../db');
 var resultFormatter = require("../../../result-formatter");
 

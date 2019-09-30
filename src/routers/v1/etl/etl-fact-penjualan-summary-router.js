@@ -1,6 +1,6 @@
 var Router = require('restify-router').Router;
 var router = new Router();
-var FactPenjualanSummary = require('bateeq-module').etl.factPenjualanSummary;
+var FactPenjualanSummary = require('mm-module').etl.factPenjualanSummary;
 var db = require('../../../db');
 var SqlHelper = require('../../../sql-helper')
 var resultFormatter = require("../../../result-formatter");
