@@ -1,4 +1,4 @@
-var Manager = require("bateeq-module").master.ProductManager;
+var Manager = require("mm-module").master.ProductManager;
 var JwtRouterFactory = require("../jwt-router-factory");
 const apiVersion = '1.0.0';
 function getRouter() {

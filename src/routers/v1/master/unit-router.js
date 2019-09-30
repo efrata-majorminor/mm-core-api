@@ -1,6 +1,6 @@
 var Router = require('restify-router').Router;
 var router = new Router();
-var UnitManager = require('bateeq-module').master.UnitManager;
+var UnitManager = require('mm-module').master.UnitManager;
 var db = require('../../../db');
 var resultFormatter = require("../../../result-formatter");
 var passport = require('../../../passports/jwt-passport');
